@@ -44,4 +44,51 @@ function reverseString(string){
 const str = "Hello";
 console.log(reverseString(str));
 
+// problem 4th -- Count the Vowels: Write a function that takes a string as input and returns the count of vowels (a, e, i, o, u) in the string.
+
+function countVowels(str){
+    let count = 0;
+
+    str = str.toLowerCase();
+
+    for (let i = 0; i < str.length; i++) {
+        if(str[i] === 'a' || str[i] === 'e' || str[i] === 'i' || str[i] === 'o' || str[i] === 'u'){
+            count++;
+        }
+    }
+    return count;
+}
+
+console.log(countVowels("javascript"));
+
+
+// problem 5th -- Find the Length of a String: Write a function that takes a string as input and returns the length of the string.
+
+
+function findLength(str){
+    let strCount = 0;
+    for (let i = 0; i < str.length; i++) {
+        strCount++;
+    }
+    return strCount;
+}
+
+console.log(findLength("javascript"));
+
+
+// problem 6th -- Reverse an Array: Write a function that takes an array as input and returns a new array with the elements reversed.
+
+
+function reverseArray(arr){
+    let reverseArray = [];
+    for (let i = arr.length - 1; i >= 0; i--) {        
+        reverseArray.push(arr[i]);
+    }
+    return reverseArray;
+}
+
+let checkArray = ['hey1', 'hey2', 'hey3'];
+console.log(reverseArray(checkArray));
+
+
 
